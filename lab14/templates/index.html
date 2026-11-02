@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Item</title>
+    <link re="stylesheet" href="{{url_for('static', filename = 'style.css')}}">
+</head>
+<body>
+    <h1>Create Item by Janelle Moncrieffe</h1>
+    <h2> Create Item</h2>
+</body>
+    <form id="itemform">
+        <div>
+            <label>Name:
+                <input type="text" id="name" required>
+            </label>
+    </div>
+    <div class = "formsession">
+        <label>Price:
+            <input type="number" id="price" required>
+        </label>
+    </div>
+    <div class ="formsesion">
+        <button type="submit">Submit</button>
+    </div>
+    <p id="response"></p>
+</form>
