@@ -1,0 +1,73 @@
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Main heading */
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Form styling */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Input fields */
+input {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Buttons */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Items list */
+ul {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* List items */
+li {
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Response message */
+#response {
+    color: green;
+    font-weight: bold;
+}
+
+/* Update section */
+#updatesection {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}

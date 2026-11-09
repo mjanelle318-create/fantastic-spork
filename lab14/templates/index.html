@@ -1,28 +1,67 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Item</title>
-    <link re="stylesheet" href="{{url_for('static', filename = 'style.css')}}">
 </head>
 <body>
-    <h1>Create Item by Janelle Moncrieffe</h1>
-    <h2> Create Item</h2>
-</body>
+
+    <h2>Create Item by Janelle Moncrieffe
+
     <form id="itemform">
         <div>
-            <label>Name:
+            <label>
+                Name:
                 <input type="text" id="name" required>
             </label>
-    </div>
-    <div class = "formsession">
-        <label>Price:
-            <input type="number" id="price" required>
+        </div>
+
+        <div>
+            <label>
+                Price:
+                <input type="number" id="price" required>
+            </label>
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+
+        <p id="response"></p>
+    </form>
+
+    <!-- LOADING ITEM -->
+    <section>
+        <hr>
+        <h2>ALL ITEMS</h2>
+
+        <button onclick="loaditems()">LOAD ITEMS</button>
+
+        <ul id="itemslist"></ul>
+    </section>
+
+    <!-- TABLE TO UPDATE AN ITEM NAME AND PRICE -->
+    <section id="updatesection" style="display: none;">
+        <h3>Update item</h3>
+
+        <input type="hidden" id="updateID">
+
+        <label>
+            Name:
+            <input type="text" id="updateName">
         </label>
-    </div>
-    <div class ="formsesion">
-        <button type="submit">Submit</button>
-    </div>
-    <p id="response"></p>
-</form>
+
+        <label>
+            Price:
+            <input type="text" id="updatePrice">
+        </label>
+
+        <button onclick="updateItem()">SAVE UPDATE</button>
+    </section>
+
+    <script src="{{ url_for('static', filename='app_script.js') }}"></script>
+
+</body>
+</html>
